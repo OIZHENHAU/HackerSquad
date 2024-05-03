@@ -13,9 +13,6 @@ from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import StandardScaler
 
 
-def fit(X, y):
-    X_train, X_test, y_train, y_test = train_test_split(X, y)
-
 
 class LassoRegressionCVModel:
     def __init__(self, start_value, end_value, step_size, n_splits, n_repeats):
